@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { Breadcrumb, Carousel, Card, Button } from "react-bootstrap";
 
 function Home() {
@@ -34,7 +35,7 @@ function Home() {
                 <h1 style={{ textAlign: "center" }}>Welcome to Our Dental Clinic</h1>
                 <h4 style={{ textAlign: "center" }}>Your smile is our top priority!</h4>
                 <div style={{ display: "flex", justifyContent: "center" }}>
-                    <a href="/appointment" className="btn btn-primary">Request an Appointment</a>
+                    <Link to="/appointment" className="btn btn-primary">Request an Appointment</Link>
                 </div>
             </div>
 
@@ -53,9 +54,9 @@ function Home() {
                         <p>
                             At our dental clinic, we are committed to providing you with the highest quality of care in a comfortable and welcoming environment. Our team of experienced professionals is dedicated to ensuring that your dental experience is as pleasant and stress-free as possible.
                         </p>
-                        <a href="/Contact" className="btn btn-primary"> {/* two ways for a button */}
+                        <Link to="/contact" className="btn btn-primary"> {/* two ways for a button */}
                             Find out more
-                        </a>
+                        </Link>
                         
                     </div>
                 </div>
@@ -77,7 +78,7 @@ function Home() {
                             <Card.Text>
                             We provide comprehensive general dentistry services to keep your teeth and gums healthy. From routine check-ups to fillings, our team is here to help you maintain your oral health.
                             </Card.Text>
-                            <Button variant="primary" href="/services">Learn More</Button>
+                            <Button variant="primary" as = {Link} to="/services">Learn More</Button>
                         </Card.Body>
                         </Card>
                     </div>
@@ -94,7 +95,7 @@ function Home() {
                             <Card.Text>
                             We offer a range of cosmetic dentistry services to enhance the appearance of your smile. Whether you need teeth whitening, veneers, or orthodontics, we have the solutions for you.
                             </Card.Text>
-                            <Button variant="primary" href="/services">Learn More</Button>
+                            <Button variant="primary" as = {Link} to="/services">Learn More</Button>
                         </Card.Body>
                         </Card>
                     </div>
@@ -107,7 +108,7 @@ function Home() {
                             <Card.Text>
                             We specialize in restorative dentistry to repair and restore damaged or missing teeth. Our services include crowns, bridges, and implants to help you regain your smile and confidence.
                             </Card.Text>
-                            <Button variant="primary" href="/services">Learn More</Button>
+                            <Button variant="primary" as = {Link} to="/services">Learn More</Button>
                         </Card.Body>
                         </Card>
                     </div>
